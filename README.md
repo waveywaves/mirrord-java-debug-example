@@ -19,7 +19,6 @@ This is a simple note-taking application built with:
 - Java Spring Boot
 - MongoDB for data storage
 - MinIO for image storage
-- FreeMarker for templating
 
 ## Prerequisites
 
@@ -47,7 +46,7 @@ kubectl apply -f kube
 3. Run the application locally with mirrord:
 
 ```bash
-mirrord exec -- ./mvnw spring-boot:run
+mirrord exec -t deployment/knote mvn spring-boot:run
 ```
 
 ## How it Works
